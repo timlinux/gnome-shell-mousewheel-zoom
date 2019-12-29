@@ -7,7 +7,7 @@ GPLv3
 This uses python-xlib and python-dbus to allow the gnome shell to be zoomed
 like enhanced zoom desktop in compiz using the modification key and mouse scrollwheel
 
-## COnfiguration
+## Configuration
 To select the modifier key use dconf-editor and navigate to:
 com -> tobiasquinn.com -> mousewheelzoom -> modifier-key
 Note: mousewheelzoom needs to be restarted to reload the configuration
