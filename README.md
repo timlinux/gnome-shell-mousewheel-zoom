@@ -7,7 +7,7 @@ GPLv3
 This uses python-xlib and python-dbus to allow the gnome shell to be zoomed
 like enhanced zoom desktop in compiz using the modification key and mouse scrollwheel
 
-## COnfiguration
+## Configuration
 To select the modifier key use dconf-editor and navigate to:
 com -> tobiasquinn.com -> mousewheelzoom -> modifier-key
 Note: mousewheelzoom needs to be restarted to reload the configuration
@@ -26,7 +26,8 @@ There is an archlinux PKGBUILD provided (available from AUR as gnome-shell-mouse
 
 ## Linux Mint 15
 For Linux Mint 15 olivia (Ubuntu 13.04 raring) this is the installation procedure that worked for me:
-```
+
+```bash
 sudo apt-get install git valac libx11-dev
 mkdir ~/src ; cd ~/src
 git clone https://github.com/tobiasquinn/gnome-shell-mousewheel-zoom.git
@@ -43,13 +44,16 @@ https://launchpad.net/~tobias-quinn/+archive/gsmz
 
 to install do:
 
+```bash
 sudo add-apt-repository ppa:tobias-quinn/gsmz
 sudo apt-get update
 sudo apt-get install gnome-shell-mousewheel-zoom
+```
 
 ## Fedora
 To be able to compile (using `make`) the vala version, run:
-```
+
+```bash
 yum -y install vala gobject-introspection-devel libX11-devel
 ```
 
